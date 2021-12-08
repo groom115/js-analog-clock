@@ -1,0 +1,167 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+
+body{
+  background-color:#6f6fa9;
+  justify-content: center;
+  align-items:center;
+  display: flex;
+  padding-top:100px;
+}
+.Container{
+   width: 300px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, .8);
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+  font-size:1.5rem;
+   
+}
+
+
+.Container #number1 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+ 
+}
+  .Container #number2 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(30deg);
+}
+.Container #number3 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(60deg);
+}
+.Container #number4 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(90deg);
+}
+.Container #number5 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(120deg);
+}
+.Container #number6 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(150deg);
+}
+.Container #number7 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(180deg);
+}
+.Container #number8 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(210deg);
+}
+.Container #number9 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(240deg);
+}
+.Container #number10 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(270deg);
+}
+.Container #number11 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(300deg);
+}
+
+.Container #number12 {
+  position:absolute;
+  width:100%;
+  height:100%;
+  text-align:center;
+  transform: rotate(330deg);
+}
+.Container .aft {
+  content: '';
+  position: absolute;
+  background-color: black;
+  z-index: 11;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+.Container #hour{
+    --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  width: 10px;
+  height: 35%;
+  background-color: black;
+  
+}
+.Container #minute{
+  --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  width: 7px;
+  height: 40%;
+  background-color: black;
+}
+.Container #second{
+     --rotation: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  transform-origin: bottom;
+  z-index: 10;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  width: 3px;
+  height: 45%;
+  background-color: red;
+}
